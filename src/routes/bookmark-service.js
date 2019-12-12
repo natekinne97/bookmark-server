@@ -1,3 +1,5 @@
+const { isWebUri } = require('valid-url')
+
 const BookmarksService = {
     getAllbookmarks(knex) {
         return knex.select('*').from('bookmark')
